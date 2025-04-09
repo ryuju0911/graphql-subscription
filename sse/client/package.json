@@ -1,0 +1,19 @@
+{
+  "name": "client",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "prestart": "parcel build index.html",
+    "start": "pnpm dlx http-server ./dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.8.0",
+  "dependencies": {
+    "graphql-sse": "^2.5.4"
+  },
+  "devDependencies": {
+    "parcel": "^2.14.4"
+  }
+}
