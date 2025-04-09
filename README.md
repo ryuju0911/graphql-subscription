@@ -9,25 +9,25 @@ The `ws` directory contains the WebSocket implementation, while the `sse` direct
 
 To run the GraphQL server with **WebSockets**, follow these steps:
 
-### 1. Install dependencies  
-```sh
-cd ws/client
-pnpm install
-```
-
-### 2. Run the client  
-```sh
-pnpm start
-```
-
-### 3. Run the server (in a separate terminal tab)  
+### 1. Run the server
 ```sh
 cd ws/server
 go run ./server.go
 ```
 
+### 2. Install dependencies (in a separate terminal tab)
+```sh
+cd ws/client
+pnpm install
+```
+
+### 3. Run the client
+```sh
+pnpm start
+```
+
 ### 4. Open two browser tabs and navigate to [http://localhost:8081](http://localhost:8081)
 
-### 5. Try it out  
+### 5. Try it out
 You can perform queries, mutations, and subscriptions by clicking the corresponding buttons in the UI.  
 For example, open a subscription in one tab, then trigger queries or mutations in the other tab. The subscribing tab should display real-time logs reflecting those operations.
